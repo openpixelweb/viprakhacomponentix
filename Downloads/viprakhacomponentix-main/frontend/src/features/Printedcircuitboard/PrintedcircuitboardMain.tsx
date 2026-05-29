@@ -1,8 +1,8 @@
 import React from 'react';
-import ServiceDetailsSidebar from './industrialsidebar';
-import { MdGpsFixed, MdMonitor, MdVerified, MdOutlineSettingsSuggest, MdOutlineEnergySavingsLeaf, MdOutlineHub } from "react-icons/md";
+import ServiceDetailsSidebar from './printedcircuitboardsidebar';
+import { MdOutlineHub , MdGpsFixed ,  MdOutlineSettingsSuggest , MdMonitor ,    MdVerified, MdPrecisionManufacturing } from "react-icons/md";
 
-import serviceDetailsImg1 from '../../assets/images/services/idustrial-sensors.jpg';
+import serviceDetailsImg1 from '../../assets/images/services/pcbs.jpg';
 
 
 interface PointsListItem {
@@ -21,75 +21,84 @@ interface ImgBoxItem {
 const pointsListData: PointsListItem[] = [
     {
         id: 1,
-        text: 'Precision Sensor Technology',
+        text: 'Printed circuit board design support',
     },
     {
         id: 2,
-        text: 'Smart Monitoring Integration',
+        text: 'PCB layout and circuit arrangement',
     },
     {
         id: 3,
-        text: 'Industrial Automation Compatibility',
+        text: 'Single-sided and double-sided PCB solutions',
     },
     {
         id: 4,
-        text: 'High-Accuracy Detection Systems',
+        text: 'PCB assembly support',
     },
      {
         id: 5,
-        text: 'Durable Industrial Design',
+        text: 'Component mounting and soldering support',
     },
      {
         id: 6,
-        text: 'Quality Testing & Calibration',
+        text: 'Industrial electronics PCB manufacturing',
+    },
+    {
+        id: 7,
+        text: 'Custom PCB development',
+    },
+    {
+        id: 8,
+        text: 'Quality inspection and testing',
     },
 ];
 
 const imgBoxData: ImgBoxItem[] = [
     {
         id: 1,
-     iconClass: <MdGpsFixed />,
-        title: 'High Accuracy & Precision',
-        text: 'Designed to deliver reliable and accurate monitoring for industrial operations and automation systems.',
+     iconClass: < MdOutlineHub />,
+        title: 'High-Quality PCB Design',
+        text: 'Our printed circuit boards are designed with proper circuit layout, accurate track routing, and efficient component placement to ensure stable electrical performance.',
     },
     {
         id: 2,
       
-        iconClass: <MdMonitor />,
-        title: 'Real-Time Monitoring',
-        text: 'Supports continuous monitoring and instant response for improved operational efficiency.',
+        iconClass: <MdGpsFixed />,
+        title: 'Reliable Electrical Connectivity',
+        text: 'PCBs provide strong and consistent electrical connections between electronic components, reducing wiring complexity and improving overall product reliability.',
     },
       {
         id: 3,
      
-        iconClass: <MdVerified />,
-        title: 'Durable & Reliable Performance',
-        text: 'Manufactured using high-quality materials for stable performance in industrial environments.',
+        iconClass: < MdOutlineSettingsSuggest />,
+        title: 'Compact and Efficient Structure',
+        text: 'Our PCBs help reduce the size of electronic assemblies by arranging multiple components on a single board, making the final product compact and efficient.',
     },
       {
         id: 4,
      
-        iconClass: <MdOutlineSettingsSuggest  />,
-        title: 'Smart Automation Integration',
-        text: 'Compatible with automation systems, control panels, and IoT-based technologies.',
+        iconClass: <MdMonitor  />,
+        title: 'Durable Board Material',
+        text: 'We use quality PCB materials suitable for industrial applications, helping the board withstand heat, electrical load, and continuous operating conditions.',
     },
       {
         id: 5,
     
-        iconClass: <MdOutlineEnergySavingsLeaf />,
-        title: 'Energy-Efficient Operation',
-        text: 'Optimized designs for efficient performance and reduced energy consumption.',
+        iconClass: <  MdVerified />,
+        title: 'Custom PCB Solutions',
+        text: 'We offer PCB solutions based on customer requirements, including different sizes, layouts, circuit designs, component needs, and application specifications.',
     },
       {
         id: 6,
      
-        iconClass: <MdOutlineHub />,
-        title: 'Wide Industrial Compatibility',
-        text: 'Suitable for various industrial applications including manufacturing, energy systems, and automation processes.',
+        iconClass: < MdPrecisionManufacturing  />,
+        title: 'Accurate Component Mounting',
+        text: 'Our PCB manufacturing process supports precise component placement, ensuring better performance, reduced faults, and easy assembly.',
     },
+   
 ];
 
-const IndustrialsensorsMain: React.FC = () => {
+const PrintedcircuitboardMain: React.FC = () => {
     return (
         <section className="service-details">
             <div className="container">
@@ -100,23 +109,22 @@ const IndustrialsensorsMain: React.FC = () => {
 
                            
 
-                            <h3 className="service-details__title-1">Advanced Industrial Sensor Solutions</h3>
+                            <h3 className="service-details__title-1">Precision PCB Manufacturing Solutions
+</h3>
                             <p className="service-details__text-2">
-                              Viprakha Componentix Pvt Ltd specializes in the manufacturing of high-performance Industrial Sensors designed for accurate monitoring, intelligent automation, and reliable industrial operations. Our sensors are engineered using advanced technologies to deliver precision, durability, and consistent performance across demanding industrial environments.
+                              At Viprakha Componentix, we provide high-quality Printed Circuit Boards (PCBs) designed for reliable performance in industrial electronic applications. A Printed Circuit Board is the foundation of any electronic system, used to connect and support electronic components in a compact, efficient, and organized way.
                             </p>
                             <p className="service-details__text-2">
-                             We manufacture industrial sensor solutions that support automation systems, process monitoring, smart control applications, and real-time data collection for modern industries and smart technologies.
-                            </p>
+                            Our PCBs are suitable for industrial control systems, automation products, power electronics, embedded systems, and custom electronic devices. We focus on quality, precision, durability, and performance to meet the needs of modern electronic manufacturing.</p>
                             <div className="service-details__img">
                                 <img src={serviceDetailsImg1} alt="Advanced Power Supply Unit Manufacturing Solutions" />
                             </div>
                           
                             <h3 className="service-details__title-1">Our Manufacturing Expertise</h3>
                             <p className="service-details__text-2">
-                      With advanced manufacturing processes and precision engineering, we develop industrial sensors that meet industry standards for reliability, efficiency, and operational accuracy.
-                            </p>
+                              At Viprakha Componentix, we understand the importance of accuracy and quality in PCB manufacturing. Our manufacturing process is focused on delivering PCBs that meet functional, electrical, and durability requirements.</p>
                             <p className="service-details__text-2">
-                           Our manufacturing capabilities include:
+                              Our team works carefully on design review, board layout, material selection, component compatibility, assembly support, inspection, and testing. We ensure that every PCB is manufactured with attention to detail and checked for proper performance before delivery.
                             </p>
                            
 
@@ -171,4 +179,4 @@ const IndustrialsensorsMain: React.FC = () => {
     );
 };
 
-export default IndustrialsensorsMain;
+export default PrintedcircuitboardMain;

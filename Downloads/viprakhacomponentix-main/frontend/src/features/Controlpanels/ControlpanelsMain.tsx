@@ -1,8 +1,8 @@
 import React from 'react';
-import ServiceDetailsSidebar from './industrialsidebar';
-import { MdGpsFixed, MdMonitor, MdVerified, MdOutlineSettingsSuggest, MdOutlineEnergySavingsLeaf, MdOutlineHub } from "react-icons/md";
+import ServiceDetailsSidebar from './controlpanelsidebar';
+import { MdDashboardCustomize , MdWorkspacePremium ,  MdElectricalServices , MdTune ,  MdSpeed , MdHandyman  } from "react-icons/md";
 
-import serviceDetailsImg1 from '../../assets/images/services/idustrial-sensors.jpg';
+import serviceDetailsImg1 from '../../assets/images/services/control.jpg';
 
 
 interface PointsListItem {
@@ -21,75 +21,86 @@ interface ImgBoxItem {
 const pointsListData: PointsListItem[] = [
     {
         id: 1,
-        text: 'Precision Sensor Technology',
+        text: 'Electrical control panel design',
     },
     {
         id: 2,
-        text: 'Smart Monitoring Integration',
+        text: 'Panel fabrication and assembly',
     },
     {
         id: 3,
-        text: 'Industrial Automation Compatibility',
+        text: 'Component mounting and wiring',
     },
     {
         id: 4,
-        text: 'High-Accuracy Detection Systems',
+        text: 'Motor control panel manufacturing',
     },
      {
         id: 5,
-        text: 'Durable Industrial Design',
+        text: 'Automation control panel solutions',
     },
      {
         id: 6,
-        text: 'Quality Testing & Calibration',
+        text: 'Power distribution panel solutions',
+    },
+   
+     {
+        id: 7,
+        text: 'Testing and quality inspection',
+    },
+    
+     {
+        id: 8,
+        text: 'Customized industrial panel manufacturing',
     },
 ];
 
 const imgBoxData: ImgBoxItem[] = [
     {
         id: 1,
-     iconClass: <MdGpsFixed />,
-        title: 'High Accuracy & Precision',
-        text: 'Designed to deliver reliable and accurate monitoring for industrial operations and automation systems.',
+     iconClass: <MdDashboardCustomize  />,
+        title: 'Robust Panel Design',
+        text: 'Our control panels are built with strong and durable enclosures that protect internal electrical components from dust, moisture, heat, and industrial working conditions.',
     },
     {
         id: 2,
       
-        iconClass: <MdMonitor />,
-        title: 'Real-Time Monitoring',
-        text: 'Supports continuous monitoring and instant response for improved operational efficiency.',
+        iconClass: <MdWorkspacePremium  />,
+        title: 'High-Quality Components',
+        text: 'We use dependable electrical components such as MCBs, MCCBs, contactors, relays, timers, meters, indicators, switches, and terminal blocks to ensure long-lasting performance.',
     },
       {
         id: 3,
      
-        iconClass: <MdVerified />,
-        title: 'Durable & Reliable Performance',
-        text: 'Manufactured using high-quality materials for stable performance in industrial environments.',
+        iconClass: < MdElectricalServices  />,
+        title: 'Safe and Organized Wiring',
+        text: 'Each panel is designed with neat wiring, proper cable routing, ferruling, and terminal marking. This helps in easy maintenance, troubleshooting, and safe operation.',
     },
       {
         id: 4,
      
-        iconClass: <MdOutlineSettingsSuggest  />,
-        title: 'Smart Automation Integration',
-        text: 'Compatible with automation systems, control panels, and IoT-based technologies.',
+        iconClass: <MdTune   />,
+        title: 'Customized Solutions',
+        text: 'We manufacture control panels according to specific industrial needs, including motor control, automation control, power distribution, and machine control applications.',
     },
       {
         id: 5,
     
-        iconClass: <MdOutlineEnergySavingsLeaf />,
-        title: 'Energy-Efficient Operation',
-        text: 'Optimized designs for efficient performance and reduced energy consumption.',
+        iconClass: < MdSpeed  />,
+        title: 'Efficient Performance',
+        text: 'Our panels are engineered to provide stable control, reduce downtime, and improve the overall efficiency of electrical and automation systems.',
     },
       {
         id: 6,
      
-        iconClass: <MdOutlineHub />,
-        title: 'Wide Industrial Compatibility',
-        text: 'Suitable for various industrial applications including manufacturing, energy systems, and automation processes.',
+        iconClass: < MdHandyman  />,
+        title: 'Easy Installation and Maintenance',
+        text: 'The panels are designed for user-friendly installation, operation, inspection, and servicing, helping industries save time and maintenance effort.',
     },
+   
 ];
 
-const IndustrialsensorsMain: React.FC = () => {
+const ControlpanelsMain: React.FC = () => {
     return (
         <section className="service-details">
             <div className="container">
@@ -100,23 +111,22 @@ const IndustrialsensorsMain: React.FC = () => {
 
                            
 
-                            <h3 className="service-details__title-1">Advanced Industrial Sensor Solutions</h3>
+                            <h3 className="service-details__title-1">Advanced Industrial Control Panel Solutions
+</h3>
                             <p className="service-details__text-2">
-                              Viprakha Componentix Pvt Ltd specializes in the manufacturing of high-performance Industrial Sensors designed for accurate monitoring, intelligent automation, and reliable industrial operations. Our sensors are engineered using advanced technologies to deliver precision, durability, and consistent performance across demanding industrial environments.
+                              At Viprakha Componentix, we manufacture high-quality Control Panels designed to ensure smooth, safe, and efficient operation of industrial electrical systems. Our control panels are engineered using reliable components and advanced wiring practices to support various industrial applications.
                             </p>
                             <p className="service-details__text-2">
-                             We manufacture industrial sensor solutions that support automation systems, process monitoring, smart control applications, and real-time data collection for modern industries and smart technologies.
-                            </p>
+                            Our panels are suitable for controlling motors, machines, automation systems, power distribution, and process equipment. Each panel is designed with a focus on safety, durability, performance, and ease of maintenance.</p>
                             <div className="service-details__img">
                                 <img src={serviceDetailsImg1} alt="Advanced Power Supply Unit Manufacturing Solutions" />
                             </div>
                           
                             <h3 className="service-details__title-1">Our Manufacturing Expertise</h3>
                             <p className="service-details__text-2">
-                      With advanced manufacturing processes and precision engineering, we develop industrial sensors that meet industry standards for reliability, efficiency, and operational accuracy.
-                            </p>
+                      At Viprakha Componentix, we focus on precision, quality, and reliability in every control panel we manufacture. Our manufacturing process includes careful design planning, component selection, panel fabrication, wiring, testing, and final inspection.</p>
                             <p className="service-details__text-2">
-                           Our manufacturing capabilities include:
+                           We understand that every industry has different requirements. That is why our team provides customized control panel solutions based on technical specifications, site conditions, and application needs.
                             </p>
                            
 
@@ -171,4 +181,4 @@ const IndustrialsensorsMain: React.FC = () => {
     );
 };
 
-export default IndustrialsensorsMain;
+export default ControlpanelsMain;

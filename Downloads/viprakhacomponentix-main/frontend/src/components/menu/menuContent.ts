@@ -34,9 +34,9 @@ export const servicesList: MenuItem[] = [
 export const shopList: MenuItem[] = [
     { id: 1, menuItem: "Power Supply Units", menuLink: "/power-supply-units" },
     { id: 2, menuItem: "Industrial Sensors", menuLink: "/industrial-sensors" },
-    { id: 3, menuItem: "Control Panels", menuLink: "" },
-    { id: 4, menuItem: "Printed Circuit Boards (PCBs)", menuLink: "" },
-    { id: 5, menuItem: "Automation Modules", menuLink: "" },
+    { id: 3, menuItem: "Control Panels", menuLink: "/control-panels" },
+    { id: 4, menuItem: "Printed Circuit Boards (PCBs)", menuLink: "/printed-circuit-boards" },
+    { id: 5, menuItem: "Automation Modules", menuLink: "/Automation-Modules" },
     { id: 6, menuItem: "Smart Home Controllers", menuLink: "" },
     { id: 7, menuItem: "Energy Monitoring Devices", menuLink: "" },
      { id: 8, menuItem: "IoT-Based Devices", menuLink: "" },

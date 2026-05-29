@@ -37,6 +37,9 @@ const CommercialServices = lazy(() => import('../pages/commercial-services/Comme
 const LightingFixtures = lazy(() => import('../pages/lighting-fixtures/LightingFixtures'));
 const PowerSupplyUnits = lazy(() => import('../pages/Power-Supply-Units/Power-Supply-Units'));
 const Industrialsensors = lazy(() => import('../pages/Industrial-Sensors/industrial-sensors'));
+const Automationmodules = lazy(() => import('../pages/Automation-Modules/automation-modules'));
+const Controlpanels= lazy(() => import('../pages/Control-Panels/control-panels'));
+const Printedcircuitboard= lazy(() => import('../pages/Printed-Circuit-Board/printed-circuit-boards'));
 const Faq = lazy(() => import('../pages/faq/Faq'));
 const Pricing = lazy(() => import('../pages/pricing/Pricing'));
 const Testimonials = lazy(() => import('../pages/testimonials/Testimonials'));
@@ -128,6 +131,18 @@ const ROUTER = createBrowserRouter([
                          {
                         path: "/industrial-sensors",
                         element: <ErrorBoundary name='Industrial Sensors'><SuspenseWrapper><Industrialsensors /></SuspenseWrapper></ErrorBoundary>
+                    },
+                     {
+                        path: "/control-panels",
+                        element: <ErrorBoundary name='Control Panels'><SuspenseWrapper><Controlpanels /></SuspenseWrapper></ErrorBoundary>
+                    },
+                    {
+                        path: "/printed-circuit-boards",
+                        element: <ErrorBoundary name='Printed Circuit Board'><SuspenseWrapper><Printedcircuitboard /></SuspenseWrapper></ErrorBoundary>
+                    },
+                    {
+                        path: "/automation-modules",
+                        element: <ErrorBoundary name='automation modules'><SuspenseWrapper><Automationmodules /></SuspenseWrapper></ErrorBoundary>
                     },
                     {
                         path: "/lighting-fixtures",

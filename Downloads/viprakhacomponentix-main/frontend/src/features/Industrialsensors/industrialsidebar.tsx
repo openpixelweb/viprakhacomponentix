@@ -11,12 +11,12 @@ interface ServiceLinkItem {
 
 const applications: ServiceLinkItem[] = [
     { id: 1, label: 'Industrial Automation Systems' },
-    { id: 2, label: 'Manufacturing Equipment' },
-    { id: 3, label: 'Control Panels' },
-    { id: 4, label: 'Smart Home Technologies' },
-    { id: 5, label: 'IoT & Embedded Systems' },
-    { id: 6, label: 'Energy Monitoring Solutions' },
-     { id: 7, label: 'Communication Infrastructure' },
+    { id: 2, label: 'Manufacturing Industries' },
+    { id: 3, label: 'Smart Control Panels' },
+    { id: 4, label: 'Process Monitoring Systems' },
+    { id: 5, label: 'Energy Management Solutions' },
+    { id: 6, label: 'IoT & Smart Technologies' },
+     { id: 7, label: 'Safety & Detection Systems' },
 ];
 
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import ServiceDetailsSidebar from './industrialsidebar';
-import { MdGpsFixed, MdMonitor, MdVerified, MdOutlineSettingsSuggest, MdOutlineEnergySavingsLeaf, MdOutlineHub } from "react-icons/md";
+import ServiceDetailsSidebar from './automtionmodulessidebar';
+import { MdOutlineSettingsSuggest , MdMonitor ,  MdVerified , MdOutlineHub  ,   MdPrecisionManufacturing , MdGpsFixed} from "react-icons/md";
 
-import serviceDetailsImg1 from '../../assets/images/services/idustrial-sensors.jpg';
+import serviceDetailsImg1 from '../../assets/images/services/automation.jpg';
 
 
 interface PointsListItem {
@@ -21,75 +21,84 @@ interface ImgBoxItem {
 const pointsListData: PointsListItem[] = [
     {
         id: 1,
-        text: 'Precision Sensor Technology',
+        text: 'Automation module manufacturing',
     },
     {
         id: 2,
-        text: 'Smart Monitoring Integration',
+        text: 'Industrial control module development',
     },
     {
         id: 3,
-        text: 'Industrial Automation Compatibility',
+        text: 'PCB-based automation solutions',
     },
     {
         id: 4,
-        text: 'High-Accuracy Detection Systems',
+        text: 'Sensor and relay interface modules',
     },
      {
         id: 5,
-        text: 'Durable Industrial Design',
+        text: 'Machine control module manufacturing',
     },
      {
         id: 6,
-        text: 'Quality Testing & Calibration',
+        text: 'Custom electronic module assembly',
+    },
+    {
+        id: 7,
+        text: 'Control panel integration support',
+    },
+    {
+        id: 8,
+        text: 'Testing and quality inspection',
     },
 ];
 
 const imgBoxData: ImgBoxItem[] = [
     {
         id: 1,
-     iconClass: <MdGpsFixed />,
-        title: 'High Accuracy & Precision',
-        text: 'Designed to deliver reliable and accurate monitoring for industrial operations and automation systems.',
+     iconClass: < MdOutlineSettingsSuggest />,
+        title: 'Reliable Automation Control',
+        text: 'Our automation modules are designed to provide stable and accurate control for industrial machines, equipment, and electronic systems.',
     },
     {
         id: 2,
       
         iconClass: <MdMonitor />,
-        title: 'Real-Time Monitoring',
-        text: 'Supports continuous monitoring and instant response for improved operational efficiency.',
+        title: 'Compact Module Design',
+        text: 'The modules are built with a compact and efficient structure, making them easy to install inside control panels, machines, and automation systems.',
     },
       {
         id: 3,
      
-        iconClass: <MdVerified />,
-        title: 'Durable & Reliable Performance',
-        text: 'Manufactured using high-quality materials for stable performance in industrial environments.',
+        iconClass: < MdVerified/>,
+        title: 'High-Quality Electronic Components',
+        text: 'We use reliable electronic components to ensure long service life, consistent performance, and reduced maintenance requirements.',
     },
       {
         id: 4,
      
-        iconClass: <MdOutlineSettingsSuggest  />,
-        title: 'Smart Automation Integration',
-        text: 'Compatible with automation systems, control panels, and IoT-based technologies.',
+        iconClass: <MdOutlineHub   />,
+        title: 'Easy System Integration',
+        text: 'Our automation modules are designed for easy integration with control panels, sensors, relays, motors, and other industrial electronic systems.',
     },
       {
         id: 5,
     
-        iconClass: <MdOutlineEnergySavingsLeaf />,
-        title: 'Energy-Efficient Operation',
-        text: 'Optimized designs for efficient performance and reduced energy consumption.',
+        iconClass: < MdPrecisionManufacturing  />,
+        title: 'Custom-Built Solutions',
+        text: 'We provide customized automation modules based on client requirements, application needs, input/output specifications, and machine operation requirements.',
     },
       {
         id: 6,
      
-        iconClass: <MdOutlineHub />,
-        title: 'Wide Industrial Compatibility',
-        text: 'Suitable for various industrial applications including manufacturing, energy systems, and automation processes.',
+        iconClass: < MdGpsFixed />,
+        title: 'Accurate Signal Processing',
+        text: 'The modules support proper signal handling and control functions, helping improve machine accuracy, response time, and operational efficiency.',
     },
+   
 ];
 
-const IndustrialsensorsMain: React.FC = () => {
+const AutomationmodulesMain: React.FC = () => {
     return (
         <section className="service-details">
             <div className="container">
@@ -100,25 +109,23 @@ const IndustrialsensorsMain: React.FC = () => {
 
                            
 
-                            <h3 className="service-details__title-1">Advanced Industrial Sensor Solutions</h3>
+                            <h3 className="service-details__title-1">Industrial Automation Modules
+</h3>
                             <p className="service-details__text-2">
-                              Viprakha Componentix Pvt Ltd specializes in the manufacturing of high-performance Industrial Sensors designed for accurate monitoring, intelligent automation, and reliable industrial operations. Our sensors are engineered using advanced technologies to deliver precision, durability, and consistent performance across demanding industrial environments.
+                             At Viprakha Componentix, we manufacture high-quality Automation Modules designed to support smooth, accurate, and efficient industrial automation processes. These modules help control, monitor, and manage machines, equipment, and electronic systems with improved reliability and performance.
                             </p>
                             <p className="service-details__text-2">
-                             We manufacture industrial sensor solutions that support automation systems, process monitoring, smart control applications, and real-time data collection for modern industries and smart technologies.
-                            </p>
+                           Our automation modules are suitable for industrial control systems, machine automation, process control, control panels, and customized electronic applications. We focus on quality, precision, durability, and customer-specific requirements to deliver dependable automation solutions.</p>
                             <div className="service-details__img">
                                 <img src={serviceDetailsImg1} alt="Advanced Power Supply Unit Manufacturing Solutions" />
                             </div>
                           
                             <h3 className="service-details__title-1">Our Manufacturing Expertise</h3>
                             <p className="service-details__text-2">
-                      With advanced manufacturing processes and precision engineering, we develop industrial sensors that meet industry standards for reliability, efficiency, and operational accuracy.
-                            </p>
+                              At Viprakha Componentix, we specialize in manufacturing automation modules that meet the requirements of modern industrial electronics and automation systems. Our manufacturing process includes design planning, component selection, PCB assembly, wiring, testing, and final quality inspection.</p>
                             <p className="service-details__text-2">
-                           Our manufacturing capabilities include:
+                              We understand that every automation application is different. That is why we provide customized module solutions based on the customer’s machine design, control logic, operating conditions, and technical requirements.
                             </p>
-                           
 
                             <ul className="service-details__points-list list-unstyled">
                                 {pointsListData.map((point) => (
@@ -171,4 +178,4 @@ const IndustrialsensorsMain: React.FC = () => {
     );
 };
 
-export default IndustrialsensorsMain;
+export default AutomationmodulesMain;
