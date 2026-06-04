@@ -1,12 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { FaPlug, FaBroadcastTower, FaSlidersH, FaMicrochip, FaRobot } from "react-icons/fa";
+import { GiBatteryPack, GiElectric } from "react-icons/gi";
+import { IoToggleOutline, IoGitNetworkOutline} from "react-icons/io5";
+import { RiPulseLine, RiHomeGearLine } from "react-icons/ri";
 
 import servicesImg1 from '../../assets/images/services/powersupplyunits.jpg';
 import servicesImg2 from '../../assets/images/services/industrialsensors.jpg';
 import servicesImg3 from '../../assets/images/services/controlpanels.jpg';
 import servicesImg4 from '../../assets/images/services/pcb.jpg';
 import servicesImg5 from '../../assets/images/services/automationmodules.jpg';
+import servicesImg6 from '../../assets/images/services/smarthomecon.jpg';
+import servicesImg7 from '../../assets/images/services/energymonitoringpro.jpg';
+import servicesImg8 from '../../assets/images/services/iotproduct.jpg';
+import servicesImg9 from '../../assets/images/services/smartswitch.jpg';
+import servicesImg10 from '../../assets/images/services/voltage.jpg';
+import servicesImg11 from '../../assets/images/services/batteryproduct.jpg';
 import TextAnimation from '../../components/elements/TextAnimation';
 import SectionWrapper from '../../components/elements/SectionWrapper';
 
@@ -33,14 +42,14 @@ const serviceItems: ServiceItem[] = [
         image: servicesImg2,
         iconClass: <FaBroadcastTower />,
         title: 'Industrial Sensors',
-        to: '#',
+        to: '/industrial-sensors',
         hoverText: 'Precision sensors designed for automation, monitoring, and smart technology applications.',
     },
     {
         id: 3,
         image: servicesImg3,
         iconClass: <FaSlidersH />,
-        title: 'Control Panels',
+        title: '/control-panels',
         to: '#',
         hoverText: 'Advanced control systems for industrial operations and intelligent electrical management.',
     },
@@ -49,7 +58,7 @@ const serviceItems: ServiceItem[] = [
         image: servicesImg4,
         iconClass: <FaMicrochip />,
         title: 'Printed Circuit Boards (PCBs)',
-        to: '#',
+        to: '/printed-circuit-boards',
         hoverText: 'High-performance PCB manufacturing for industrial electronics and smart devices.',
     },
     {
@@ -57,8 +66,56 @@ const serviceItems: ServiceItem[] = [
         image: servicesImg5,
         iconClass: <FaRobot />,
         title: 'Automation Modules',
-        to: '#',
+        to: '/Automation-Modules',
         hoverText: 'Smart automation technologies that improve operational efficiency and system integration.',
+    },
+     {
+        id: 6,
+        image: servicesImg6,
+        iconClass: <RiHomeGearLine />,
+        title: 'Smart Home Controllers',
+        to: '/smart-home-controllers',
+        hoverText: 'Smart Home Controllers provide centralized management of connected devices, enabling seamless automation and intelligent control of lighting, appliances, security systems, and other smart home functions.',
+    },
+     {
+        id: 7,
+        image: servicesImg7,
+        iconClass: <RiPulseLine />,
+        title: 'Energy Monitoring Devices',
+        to: '/energy-monitoring-devices',
+        hoverText: 'Energy Monitoring Devices provide real-time insights into electricity consumption, helping users track, analyze, and optimize energy usage efficiently.',
+    },
+     {
+        id: 8,
+        image: servicesImg8,
+        iconClass: <IoGitNetworkOutline />,
+        title: 'IoT-Based Devices',
+        to: '/ioT-based-devices',
+        hoverText: 'IoT-Based Devices enable seamless connectivity, real-time monitoring, and intelligent communication between systems and devices.',
+    },
+     {
+        id: 9,
+        image: servicesImg9,
+        iconClass: <IoToggleOutline />,
+        title: 'Smart Switches',
+        to: '/smart-switches',
+        hoverText: 'Smart Switches provide intelligent control of lighting, appliances, and electrical systems, enabling convenient operation and enhanced energy efficiency.',
+    },
+     {
+        id: 10,
+        image: servicesImg10,
+        iconClass: <GiElectric />,
+        title: 'Voltage Stabilizers',
+        to: '/voltage-stabilizers',
+        hoverText: 'Our Voltage Stabilizers provide accurate voltage regulation and dependable power protection, ensuring the safe and efficient operation of industrial, commercial, and residential electrical systems.',
+    },
+     {
+        id: 11,
+        image: servicesImg11,
+        iconClass: <GiBatteryPack />,
+        title: 'Battery Energy Storage System',
+        to: '/battery-energy-storage-system',
+        hoverText: 'Battery Energy Storage Systems (BESS) store electrical energy efficiently and deliver power when needed, ensuring reliable backup power and optimized energy management.',
     },
 ];
 

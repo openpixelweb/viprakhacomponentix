@@ -41,13 +41,13 @@ const quickLinks: NavLink[] = [
 
 const serviceLinks: NavLink[] = [
     { id: 1, label: 'Power Supply Units', to: '/power-supply-units' },
-    { id: 2, label: 'Industrial Sensors', to: '#' },
-    { id: 3, label: 'Control Panels', to: '#' },
-    { id: 4, label: 'Printed Circuit Boards (PCBs)', to: '#' },
-    { id: 5, label: 'Automation Modules', to: '#' },
-     { id: 6, label: 'Smart Home Controllers', to: '#' },
-      { id: 7, label: 'Energy Monitoring Devices', to: '#' },
-       { id: 8, label: 'IoT-Based Devices', to: '#' },
+    { id: 2, label: 'Industrial Sensors', to: '/industrial-sensors' },
+    { id: 3, label: 'Control Panels', to: '/control-panels' },
+    { id: 4, label: 'Printed Circuit Boards (PCBs)', to: '/printed-circuit-boards' },
+    { id: 5, label: 'Automation Modules', to: '/Automation-Modules' },
+     { id: 6, label: 'Smart Home Controllers', to: '/smart-home-controllers' },
+      { id: 7, label: 'Energy Monitoring Devices', to: '/energy-monitoring-devices' },
+       { id: 8, label: 'IoT-Based Devices', to: '/ioT-based-devices' },
         // { id: 9, label: 'Smart Switches', to: '#' },
 ];
 
@@ -82,11 +82,7 @@ const socialLinks: SocialLink[] = [
     { id: 4, icon: 'icon-instagram', href: '#' },
 ];
 
-const bottomMenuLinks: NavLink[] = [
 
-    { id: 2, label: 'Terms and Condition', to: '#' },
-    { id: 3, label: 'Privacy and Policy', to: '#' },
-];
 
 const FooterOne: React.FC = () => {
     
@@ -205,16 +201,10 @@ const FooterOne: React.FC = () => {
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">
+                        <p className="site-footer__bottom-text text-center">
                             Copyright ©<script>document.write(new Date().getFullYear());</script>. All Rights Reserved by VIPRAKHA COMPONENTIX PVT LTD
                         </p>
-                        <ul className="list-unstyled site-footer__bottom-menu">
-                            {bottomMenuLinks.map((link) => (
-                                <li key={link.id}>
-                                    <Link to={link.to}>{link.label}</Link>
-                                </li>
-                            ))}
-                        </ul>
+                 
                     </div>
                 </div>
             </div>

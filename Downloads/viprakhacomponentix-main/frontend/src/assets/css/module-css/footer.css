@@ -399,7 +399,7 @@
 
 .site-footer__bottom-inner {
     position: relative;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;

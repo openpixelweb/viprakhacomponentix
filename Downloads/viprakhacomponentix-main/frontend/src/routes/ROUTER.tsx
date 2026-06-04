@@ -40,6 +40,12 @@ const Industrialsensors = lazy(() => import('../pages/Industrial-Sensors/industr
 const Automationmodules = lazy(() => import('../pages/Automation-Modules/automation-modules'));
 const Controlpanels= lazy(() => import('../pages/Control-Panels/control-panels'));
 const Printedcircuitboard= lazy(() => import('../pages/Printed-Circuit-Board/printed-circuit-boards'));
+const Smarthomecontroller= lazy(() => import('../pages/Smart-Home-Controllers/smart-home-controllers'));
+const EnergyMoniteringdevices= lazy(() => import('../pages/Energy-Monitoring-Devices/energy-monitoring-devices'));
+const Batteryenergystorage= lazy(() => import('../pages/Battery-Energy-Storage-System/battery-energy-storage-sytem'));
+const Iotbaseddevices= lazy(() => import('../pages/IoT-Based-Devices/Iot-based-devices'));
+const Smartswitches= lazy(() => import('../pages/Smart-Switches/smart-switches'));
+const VoltageStabilizers= lazy(() => import('../pages/Voltage-Stabilizers/voltage-stabilizers'));
 const Faq = lazy(() => import('../pages/faq/Faq'));
 const Pricing = lazy(() => import('../pages/pricing/Pricing'));
 const Testimonials = lazy(() => import('../pages/testimonials/Testimonials'));
@@ -135,6 +141,30 @@ const ROUTER = createBrowserRouter([
                      {
                         path: "/control-panels",
                         element: <ErrorBoundary name='Control Panels'><SuspenseWrapper><Controlpanels /></SuspenseWrapper></ErrorBoundary>
+                    },
+                      {
+                        path: "/smart-home-controllers",
+                        element: <ErrorBoundary name='Smart Home Controllers'><SuspenseWrapper><Smarthomecontroller /></SuspenseWrapper></ErrorBoundary>
+                    },
+                        {
+                        path: "/energy-monitoring-devices",
+                        element: <ErrorBoundary name='Energy Monitoring Devices'><SuspenseWrapper><EnergyMoniteringdevices /></SuspenseWrapper></ErrorBoundary>
+                    },
+                       {
+                        path: "/IoT-based-devices",
+                        element: <ErrorBoundary name='IoT-Based Devices'><SuspenseWrapper><Iotbaseddevices /></SuspenseWrapper></ErrorBoundary>
+                    },
+                         {
+                        path: "/smart-switches",
+                        element: <ErrorBoundary name='Smart Switches'><SuspenseWrapper><Smartswitches /></SuspenseWrapper></ErrorBoundary>
+                    },
+                     {
+                        path: "/voltage-stabilizers",
+                        element: <ErrorBoundary name='Voltage Stabilizers'><SuspenseWrapper><VoltageStabilizers /></SuspenseWrapper></ErrorBoundary>
+                    },
+                    {
+                        path: "/battery-energy-storage-system",
+                        element: <ErrorBoundary name='Battery Energy Storage System'><SuspenseWrapper><Batteryenergystorage /></SuspenseWrapper></ErrorBoundary>
                     },
                     {
                         path: "/printed-circuit-boards",

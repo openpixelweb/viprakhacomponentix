@@ -35,7 +35,7 @@ const serviceItems: ServiceItem[] = [
         image: servicesImg2,
         iconClass: <FaBroadcastTower />,
         title: 'Industrial Sensors',
-        to: '#',
+        to: '/industrial-sensors',
         hoverText: 'Precision sensors designed for automation, monitoring, and smart technology applications.',
     },
     {
@@ -43,7 +43,7 @@ const serviceItems: ServiceItem[] = [
         image: servicesImg3,
         iconClass: <FaSlidersH />,
         title: 'Control Panels',
-        to: '#',
+        to: '/control-panels',
         hoverText: 'Advanced control systems for industrial operations and intelligent electrical management.',
     },
     {
@@ -51,7 +51,7 @@ const serviceItems: ServiceItem[] = [
         image: servicesImg4,
         iconClass: <FaMicrochip />,
         title: 'Printed Circuit Boards (PCBs)',
-        to: '#',
+        to: '/printed-circuit-boards',
         hoverText: 'High-performance PCB manufacturing for industrial electronics and smart devices.',
     },
     {
@@ -59,7 +59,7 @@ const serviceItems: ServiceItem[] = [
         image: servicesImg5,
         iconClass: <FaRobot />,
         title: 'Automation Modules',
-        to: '#',
+        to: '/Automation-Modules',
         hoverText: 'Smart automation technologies that improve operational efficiency and system integration.',
     },
 ];
