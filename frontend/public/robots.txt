@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Once SITE_URL is configured, publish sitemap.xml and add its full URL here.
